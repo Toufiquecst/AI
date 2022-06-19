@@ -1,0 +1,24 @@
+polynomial(X,X):-	!.
+polynomial(Term,X):-
+			number(Term),
+			!.
+polynomial(Term1+Term2,X):-
+				polynomial(Term1,X),
+				polynomial(Term2,X),
+				!.
+polynomial(Term1-Term2,X):-
+				polynomial(Term1,X),
+				polynomial(Term2,X),
+				!.
+polynomial(Term1*Term2,X):-
+				polynomial(Term1,X),
+				polynomial(Term2,X),
+				!.
+polynomial(Term1/Term2,X):-
+				polynomial(Term1,X),
+				polynomial(Term2,X),
+				!.
+polynomial(Term1^N,X):-
+				polynomial(Term1,X),
+				number(N),
+				!.
