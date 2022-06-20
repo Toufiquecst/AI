@@ -1,3 +1,3 @@
-8th Sem Computer Science AI.\n
+8th Sem Computer Science AI.
 Prolog Programs
 Executable in any Prolog IDE
